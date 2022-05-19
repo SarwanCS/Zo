@@ -74,7 +74,7 @@ struct CreateDocumentSnip: View {
                     /** File Importer class called in here **/
                     .fileImporter(
                         isPresented: $isImporting,
-                        allowedContentTypes: [.plainText],
+                        allowedContentTypes: [.plainText, .pdf],
                         allowsMultipleSelection: false
                     ) { result in
                         do {

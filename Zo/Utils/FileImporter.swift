@@ -12,7 +12,7 @@ import UniformTypeIdentifiers
 
 struct MessageDocument: FileDocument {
     
-    static var readableContentTypes: [UTType] { [.plainText] }
+    static var readableContentTypes: [UTType] { [.plainText, .pdf] }
 
     var message: String
 
