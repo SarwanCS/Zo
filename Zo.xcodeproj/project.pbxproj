@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003A329E2834CA0D008A358D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003A329D2834CA0D008A358D /* Launch Screen.storyboard */; };
+		003A32A02834CAE8008A358D /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A329F2834CAE8008A358D /* EmailHelper.swift */; };
+		003A32A22834CBA1008A358D /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A32A12834CBA1008A358D /* NewLogin.swift */; };
+		003A32A32834CBA1008A358D /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003A32A12834CBA1008A358D /* NewLogin.swift */; };
+		006487062835955D00719650 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006487052835955D00719650 /* Storyboard.storyboard */; };
+		008E18832829CD1C00D30DDA /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA3C28121E2F0032B5FF /* KeyboardViewController.swift */; };
+		00E7FA0228121D620032B5FF /* ZoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA0128121D620032B5FF /* ZoApp.swift */; };
+		00E7FA0428121D620032B5FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA0328121D620032B5FF /* ContentView.swift */; };
+		00E7FA0628121D660032B5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E7FA0528121D660032B5FF /* Assets.xcassets */; };
+		00E7FA0928121D660032B5FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E7FA0828121D660032B5FF /* Preview Assets.xcassets */; };
+		00E7FA3228121DB20032B5FF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA3028121DB20032B5FF /* DataModel.xcdatamodeld */; };
+		00E7FA3528121E150032B5FF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E7FA3428121E150032B5FF /* CloudKit.framework */; };
+		00E7FA3D28121E2F0032B5FF /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA3C28121E2F0032B5FF /* KeyboardViewController.swift */; };
+		00E7FA4128121E2F0032B5FF /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00E7FA3A28121E2F0032B5FF /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00E7FA4B281222DE0032B5FF /* Sniptest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4A281222DE0032B5FF /* Sniptest.swift */; };
+		00E7FA4E281223130032B5FF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4D281223130032B5FF /* Global.swift */; };
+		00E7FA502812231B0032B5FF /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4F2812231B0032B5FF /* Logo.swift */; };
+		00E7FA52281223230032B5FF /* ChangeThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA51281223230032B5FF /* ChangeThemeHandler.swift */; };
+		00E7FA542812232A0032B5FF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA532812232A0032B5FF /* ImagePicker.swift */; };
+		00E7FA56281223370032B5FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA55281223370032B5FF /* Extensions.swift */; };
+		00E7FA58281223400032B5FF /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA57281223400032B5FF /* FileImporter.swift */; };
+		00E7FA612812242B0032B5FF /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA602812242B0032B5FF /* PracticeView.swift */; };
+		00E7FA632812247A0032B5FF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA622812247A0032B5FF /* SettingsView.swift */; };
+		00E7FA65281224930032B5FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA64281224930032B5FF /* HomeView.swift */; };
+		00E7FA67281224C30032B5FF /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA66281224C30032B5FF /* CreateView.swift */; };
+		00E7FA69281224D00032B5FF /* CreateDocumentSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA68281224D00032B5FF /* CreateDocumentSnip.swift */; };
+		00E7FA6B281224EB0032B5FF /* CreateTextSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6A281224EB0032B5FF /* CreateTextSnip.swift */; };
+		00E7FA6D281224FD0032B5FF /* CreatePhotoSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6C281224FD0032B5FF /* CreatePhotoSnip.swift */; };
+		00E7FA6F2812250D0032B5FF /* CreateURLSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6E2812250D0032B5FF /* CreateURLSnip.swift */; };
+		00E7FA71281225AC0032B5FF /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA70281225AC0032B5FF /* LogInView.swift */; };
+		00E7FA73281225B90032B5FF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA72281225B90032B5FF /* SignUpView.swift */; };
+		00E7FA752812264E0032B5FF /* WalkthroughOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA742812264E0032B5FF /* WalkthroughOne.swift */; };
+		00E7FA772812265D0032B5FF /* WalkthroughDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA762812265D0032B5FF /* WalkthroughDelegate.swift */; };
+		00E7FA79281226700032B5FF /* WalkthroughTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA78281226700032B5FF /* WalkthroughTwo.swift */; };
+		00E7FA7B281226780032B5FF /* WalkthroughThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7A281226780032B5FF /* WalkthroughThree.swift */; };
+		00E7FA7D281227020032B5FF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7C281227020032B5FF /* DataController.swift */; };
+		00E7FA7F2812270D0032B5FF /* BottomNavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7E2812270D0032B5FF /* BottomNavigationBarViewModel.swift */; };
+		00E7FA802812287C0032B5FF /* Sniptest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4A281222DE0032B5FF /* Sniptest.swift */; };
+		00E7FA81281228B70032B5FF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4D281223130032B5FF /* Global.swift */; };
+		00E7FA82281228C90032B5FF /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA4F2812231B0032B5FF /* Logo.swift */; };
+		00E7FA83281228DB0032B5FF /* ChangeThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA51281223230032B5FF /* ChangeThemeHandler.swift */; };
+		00E7FA84281228F10032B5FF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA532812232A0032B5FF /* ImagePicker.swift */; };
+		00E7FA852812290A0032B5FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA55281223370032B5FF /* Extensions.swift */; };
+		00E7FA86281229130032B5FF /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA57281223400032B5FF /* FileImporter.swift */; };
+		00E7FA87281229450032B5FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA64281224930032B5FF /* HomeView.swift */; };
+		00E7FA88281229E50032B5FF /* WalkthroughOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA742812264E0032B5FF /* WalkthroughOne.swift */; };
+		00E7FA8928122A0A0032B5FF /* WalkthroughTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA78281226700032B5FF /* WalkthroughTwo.swift */; };
+		00E7FA8A28122A0D0032B5FF /* WalkthroughThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7A281226780032B5FF /* WalkthroughThree.swift */; };
+		00E7FA8B28122A570032B5FF /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA602812242B0032B5FF /* PracticeView.swift */; };
+		00E7FA8C28122A6D0032B5FF /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA66281224C30032B5FF /* CreateView.swift */; };
+		00E7FA8D28122A7C0032B5FF /* CreateDocumentSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA68281224D00032B5FF /* CreateDocumentSnip.swift */; };
+		00E7FA8E28122AAE0032B5FF /* CreateTextSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6A281224EB0032B5FF /* CreateTextSnip.swift */; };
+		00E7FA8F28122ABC0032B5FF /* CreatePhotoSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6C281224FD0032B5FF /* CreatePhotoSnip.swift */; };
+		00E7FA9028122AC50032B5FF /* CreateURLSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA6E2812250D0032B5FF /* CreateURLSnip.swift */; };
+		00E7FA9128122AF00032B5FF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA72281225B90032B5FF /* SignUpView.swift */; };
+		00E7FA9228122AF80032B5FF /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA70281225AC0032B5FF /* LogInView.swift */; };
+		00E7FA9328122B1A0032B5FF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7C281227020032B5FF /* DataController.swift */; };
+		00E7FA9428122B300032B5FF /* BottomNavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA7E2812270D0032B5FF /* BottomNavigationBarViewModel.swift */; };
+		00E7FA9528122B910032B5FF /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E7FA3028121DB20032B5FF /* DataModel.xcdatamodeld */; };
+		00E7FA9628122C170032B5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E7FA0528121D660032B5FF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E7FA3F28121E2F0032B5FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E7F9F628121D620032B5FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E7FA3928121E2F0032B5FF;
+			remoteInfo = "Zo-Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00E7FA4528121E2F0032B5FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00E7FA4128121E2F0032B5FF /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		003A329D2834CA0D008A358D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
+		003A329F2834CAE8008A358D /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
+		003A32A12834CBA1008A358D /* NewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogin.swift; sourceTree = "<group>"; };
+		006487052835955D00719650 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		00E7F9FE28121D620032B5FF /* Zo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E7FA0128121D620032B5FF /* ZoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoApp.swift; sourceTree = "<group>"; };
+		00E7FA0328121D620032B5FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00E7FA0528121D660032B5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00E7FA0828121D660032B5FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00E7FA3128121DB20032B5FF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		00E7FA3428121E150032B5FF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		00E7FA3A28121E2F0032B5FF /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E7FA3C28121E2F0032B5FF /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		00E7FA3E28121E2F0032B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E7FA4628121E570032B5FF /* Zo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zo.entitlements; sourceTree = "<group>"; };
+		00E7FA4728121F8B0032B5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		00E7FA48281221110032B5FF /* Zo-Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zo-Keyboard.entitlements"; sourceTree = "<group>"; };
+		00E7FA4A281222DE0032B5FF /* Sniptest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sniptest.swift; sourceTree = "<group>"; };
+		00E7FA4D281223130032B5FF /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		00E7FA4F2812231B0032B5FF /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		00E7FA51281223230032B5FF /* ChangeThemeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeThemeHandler.swift; sourceTree = "<group>"; };
+		00E7FA532812232A0032B5FF /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		00E7FA55281223370032B5FF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00E7FA57281223400032B5FF /* FileImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileImporter.swift; sourceTree = "<group>"; };
+		00E7FA602812242B0032B5FF /* PracticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PracticeView.swift; path = Zo/View/PracticeView.swift; sourceTree = SOURCE_ROOT; };
+		00E7FA622812247A0032B5FF /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		00E7FA64281224930032B5FF /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00E7FA66281224C30032B5FF /* CreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		00E7FA68281224D00032B5FF /* CreateDocumentSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDocumentSnip.swift; sourceTree = "<group>"; };
+		00E7FA6A281224EB0032B5FF /* CreateTextSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTextSnip.swift; sourceTree = "<group>"; };
+		00E7FA6C281224FD0032B5FF /* CreatePhotoSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePhotoSnip.swift; sourceTree = "<group>"; };
+		00E7FA6E2812250D0032B5FF /* CreateURLSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateURLSnip.swift; sourceTree = "<group>"; };
+		00E7FA70281225AC0032B5FF /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		00E7FA72281225B90032B5FF /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		00E7FA742812264E0032B5FF /* WalkthroughOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughOne.swift; sourceTree = "<group>"; };
+		00E7FA762812265D0032B5FF /* WalkthroughDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughDelegate.swift; sourceTree = "<group>"; };
+		00E7FA78281226700032B5FF /* WalkthroughTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughTwo.swift; sourceTree = "<group>"; };
+		00E7FA7A281226780032B5FF /* WalkthroughThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughThree.swift; sourceTree = "<group>"; };
+		00E7FA7C281227020032B5FF /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		00E7FA7E2812270D0032B5FF /* BottomNavigationBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavigationBarViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E7F9FB28121D620032B5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E7FA3528121E150032B5FF /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E7FA3728121E2F0032B5FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E7F9F528121D620032B5FF = {
+			isa = PBXGroup;
+			children = (
+				003A329D2834CA0D008A358D /* Launch Screen.storyboard */,
+				00E7FA0028121D620032B5FF /* Zo */,
+				00E7FA3B28121E2F0032B5FF /* Zo-Keyboard */,
+				00E7F9FF28121D620032B5FF /* Products */,
+				00E7FA3328121E150032B5FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00E7F9FF28121D620032B5FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E7F9FE28121D620032B5FF /* Zo.app */,
+				00E7FA3A28121E2F0032B5FF /* Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E7FA0028121D620032B5FF /* Zo */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA4628121E570032B5FF /* Zo.entitlements */,
+				00E7FA0528121D660032B5FF /* Assets.xcassets */,
+				00E7FA4728121F8B0032B5FF /* Info.plist */,
+				00E7FA49281222BE0032B5FF /* Model */,
+				00E7FA4C281222FD0032B5FF /* Utils */,
+				00E7FA59281223980032B5FF /* View */,
+				00E7FA5A2812239F0032B5FF /* ViewModel */,
+				00E7FA0328121D620032B5FF /* ContentView.swift */,
+				00E7FA0128121D620032B5FF /* ZoApp.swift */,
+				00E7FA3028121DB20032B5FF /* DataModel.xcdatamodeld */,
+				00E7FA0728121D660032B5FF /* Preview Content */,
+			);
+			path = Zo;
+			sourceTree = "<group>";
+		};
+		00E7FA0728121D660032B5FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA0828121D660032B5FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00E7FA3328121E150032B5FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA3428121E150032B5FF /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00E7FA3B28121E2F0032B5FF /* Zo-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA48281221110032B5FF /* Zo-Keyboard.entitlements */,
+				00E7FA3C28121E2F0032B5FF /* KeyboardViewController.swift */,
+				00E7FA3E28121E2F0032B5FF /* Info.plist */,
+			);
+			path = "Zo-Keyboard";
+			sourceTree = "<group>";
+		};
+		00E7FA49281222BE0032B5FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA4A281222DE0032B5FF /* Sniptest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00E7FA4C281222FD0032B5FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA4D281223130032B5FF /* Global.swift */,
+				00E7FA4F2812231B0032B5FF /* Logo.swift */,
+				00E7FA51281223230032B5FF /* ChangeThemeHandler.swift */,
+				00E7FA532812232A0032B5FF /* ImagePicker.swift */,
+				00E7FA55281223370032B5FF /* Extensions.swift */,
+				00E7FA57281223400032B5FF /* FileImporter.swift */,
+				003A329F2834CAE8008A358D /* EmailHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		00E7FA59281223980032B5FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA5B281223D90032B5FF /* Settings */,
+				00E7FA5C281223DF0032B5FF /* Home */,
+				00E7FA5F281224030032B5FF /* Create */,
+				00E7FA5E281223FA0032B5FF /* Authentication */,
+				00E7FA602812242B0032B5FF /* PracticeView.swift */,
+				00E7FA5D281223F20032B5FF /* Walkthrough */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00E7FA5A2812239F0032B5FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA7C281227020032B5FF /* DataController.swift */,
+				00E7FA7E2812270D0032B5FF /* BottomNavigationBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00E7FA5B281223D90032B5FF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA622812247A0032B5FF /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		00E7FA5C281223DF0032B5FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				006487052835955D00719650 /* Storyboard.storyboard */,
+				00E7FA64281224930032B5FF /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		00E7FA5D281223F20032B5FF /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA742812264E0032B5FF /* WalkthroughOne.swift */,
+				00E7FA762812265D0032B5FF /* WalkthroughDelegate.swift */,
+				00E7FA78281226700032B5FF /* WalkthroughTwo.swift */,
+				00E7FA7A281226780032B5FF /* WalkthroughThree.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		00E7FA5E281223FA0032B5FF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA70281225AC0032B5FF /* LogInView.swift */,
+				00E7FA72281225B90032B5FF /* SignUpView.swift */,
+				003A32A12834CBA1008A358D /* NewLogin.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		00E7FA5F281224030032B5FF /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				00E7FA66281224C30032B5FF /* CreateView.swift */,
+				00E7FA68281224D00032B5FF /* CreateDocumentSnip.swift */,
+				00E7FA6A281224EB0032B5FF /* CreateTextSnip.swift */,
+				00E7FA6C281224FD0032B5FF /* CreatePhotoSnip.swift */,
+				00E7FA6E2812250D0032B5FF /* CreateURLSnip.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E7F9FD28121D620032B5FF /* Zo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E7FA2728121D660032B5FF /* Build configuration list for PBXNativeTarget "Zo" */;
+			buildPhases = (
+				00E7F9FA28121D620032B5FF /* Sources */,
+				00E7F9FB28121D620032B5FF /* Frameworks */,
+				00E7F9FC28121D620032B5FF /* Resources */,
+				00E7FA4528121E2F0032B5FF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E7FA4028121E2F0032B5FF /* PBXTargetDependency */,
+			);
+			name = Zo;
+			productName = Zo;
+			productReference = 00E7F9FE28121D620032B5FF /* Zo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00E7FA3928121E2F0032B5FF /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E7FA4228121E2F0032B5FF /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				00E7FA3628121E2F0032B5FF /* Sources */,
+				00E7FA3728121E2F0032B5FF /* Frameworks */,
+				00E7FA3828121E2F0032B5FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = "Zo-Keyboard";
+			productReference = 00E7FA3A28121E2F0032B5FF /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E7F9F628121D620032B5FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					00E7F9FD28121D620032B5FF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					00E7FA3928121E2F0032B5FF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 00E7F9F928121D620032B5FF /* Build configuration list for PBXProject "Zo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E7F9F528121D620032B5FF;
+			productRefGroup = 00E7F9FF28121D620032B5FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E7F9FD28121D620032B5FF /* Zo */,
+				00E7FA3928121E2F0032B5FF /* Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E7F9FC28121D620032B5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003A329E2834CA0D008A358D /* Launch Screen.storyboard in Resources */,
+				006487062835955D00719650 /* Storyboard.storyboard in Resources */,
+				00E7FA0928121D660032B5FF /* Preview Assets.xcassets in Resources */,
+				00E7FA0628121D660032B5FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E7FA3828121E2F0032B5FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E7FA9628122C170032B5FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E7F9FA28121D620032B5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008E18832829CD1C00D30DDA /* KeyboardViewController.swift in Sources */,
+				00E7FA3228121DB20032B5FF /* DataModel.xcdatamodeld in Sources */,
+				00E7FA58281223400032B5FF /* FileImporter.swift in Sources */,
+				00E7FA6B281224EB0032B5FF /* CreateTextSnip.swift in Sources */,
+				00E7FA7F2812270D0032B5FF /* BottomNavigationBarViewModel.swift in Sources */,
+				00E7FA6D281224FD0032B5FF /* CreatePhotoSnip.swift in Sources */,
+				00E7FA65281224930032B5FF /* HomeView.swift in Sources */,
+				00E7FA56281223370032B5FF /* Extensions.swift in Sources */,
+				00E7FA752812264E0032B5FF /* WalkthroughOne.swift in Sources */,
+				00E7FA67281224C30032B5FF /* CreateView.swift in Sources */,
+				003A32A22834CBA1008A358D /* NewLogin.swift in Sources */,
+				00E7FA0428121D620032B5FF /* ContentView.swift in Sources */,
+				00E7FA0228121D620032B5FF /* ZoApp.swift in Sources */,
+				00E7FA7D281227020032B5FF /* DataController.swift in Sources */,
+				00E7FA69281224D00032B5FF /* CreateDocumentSnip.swift in Sources */,
+				00E7FA71281225AC0032B5FF /* LogInView.swift in Sources */,
+				00E7FA612812242B0032B5FF /* PracticeView.swift in Sources */,
+				00E7FA79281226700032B5FF /* WalkthroughTwo.swift in Sources */,
+				00E7FA4E281223130032B5FF /* Global.swift in Sources */,
+				00E7FA52281223230032B5FF /* ChangeThemeHandler.swift in Sources */,
+				00E7FA772812265D0032B5FF /* WalkthroughDelegate.swift in Sources */,
+				00E7FA7B281226780032B5FF /* WalkthroughThree.swift in Sources */,
+				00E7FA6F2812250D0032B5FF /* CreateURLSnip.swift in Sources */,
+				00E7FA542812232A0032B5FF /* ImagePicker.swift in Sources */,
+				00E7FA73281225B90032B5FF /* SignUpView.swift in Sources */,
+				003A32A02834CAE8008A358D /* EmailHelper.swift in Sources */,
+				00E7FA632812247A0032B5FF /* SettingsView.swift in Sources */,
+				00E7FA502812231B0032B5FF /* Logo.swift in Sources */,
+				00E7FA4B281222DE0032B5FF /* Sniptest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E7FA3628121E2F0032B5FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E7FA87281229450032B5FF /* HomeView.swift in Sources */,
+				00E7FA8928122A0A0032B5FF /* WalkthroughTwo.swift in Sources */,
+				00E7FA8E28122AAE0032B5FF /* CreateTextSnip.swift in Sources */,
+				00E7FA9428122B300032B5FF /* BottomNavigationBarViewModel.swift in Sources */,
+				00E7FA8F28122ABC0032B5FF /* CreatePhotoSnip.swift in Sources */,
+				00E7FA88281229E50032B5FF /* WalkthroughOne.swift in Sources */,
+				00E7FA9128122AF00032B5FF /* SignUpView.swift in Sources */,
+				00E7FA3D28121E2F0032B5FF /* KeyboardViewController.swift in Sources */,
+				00E7FA9328122B1A0032B5FF /* DataController.swift in Sources */,
+				00E7FA9528122B910032B5FF /* DataModel.xcdatamodeld in Sources */,
+				00E7FA8C28122A6D0032B5FF /* CreateView.swift in Sources */,
+				00E7FA8B28122A570032B5FF /* PracticeView.swift in Sources */,
+				003A32A32834CBA1008A358D /* NewLogin.swift in Sources */,
+				00E7FA802812287C0032B5FF /* Sniptest.swift in Sources */,
+				00E7FA9228122AF80032B5FF /* LogInView.swift in Sources */,
+				00E7FA8D28122A7C0032B5FF /* CreateDocumentSnip.swift in Sources */,
+				00E7FA8A28122A0D0032B5FF /* WalkthroughThree.swift in Sources */,
+				00E7FA82281228C90032B5FF /* Logo.swift in Sources */,
+				00E7FA84281228F10032B5FF /* ImagePicker.swift in Sources */,
+				00E7FA9028122AC50032B5FF /* CreateURLSnip.swift in Sources */,
+				00E7FA83281228DB0032B5FF /* ChangeThemeHandler.swift in Sources */,
+				00E7FA81281228B70032B5FF /* Global.swift in Sources */,
+				00E7FA852812290A0032B5FF /* Extensions.swift in Sources */,
+				00E7FA86281229130032B5FF /* FileImporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E7FA4028121E2F0032B5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E7FA3928121E2F0032B5FF /* Keyboard */;
+			targetProxy = 00E7FA3F28121E2F0032B5FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E7FA2528121D660032B5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E7FA2628121D660032B5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E7FA2828121D660032B5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Zo/Zo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zo/Preview Content\"";
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E7FA2928121D660032B5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Zo/Zo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zo/Preview Content\"";
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Zo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zo.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00E7FA4328121E2F0032B5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zo.app.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E7FA4428121E2F0032B5FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zo.app.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E7F9F928121D620032B5FF /* Build configuration list for PBXProject "Zo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E7FA2528121D660032B5FF /* Debug */,
+				00E7FA2628121D660032B5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E7FA2728121D660032B5FF /* Build configuration list for PBXNativeTarget "Zo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E7FA2828121D660032B5FF /* Debug */,
+				00E7FA2928121D660032B5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E7FA4228121E2F0032B5FF /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E7FA4328121E2F0032B5FF /* Debug */,
+				00E7FA4428121E2F0032B5FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00E7FA3028121DB20032B5FF /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00E7FA3128121DB20032B5FF /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 00E7FA3128121DB20032B5FF /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00E7F9F628121D620032B5FF /* Project object */;
+}
