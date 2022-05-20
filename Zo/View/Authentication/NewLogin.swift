@@ -5,12 +5,13 @@
 //  Created by Brian Heralall on 5/18/22.
 //
 
+import Foundation
 import AuthenticationServices
 import SwiftUI
 import CloudKit
 
-
 /** Credentials of user would be stored in these variables for usage **/
+
 
 struct AppleUser: Codable {
     let userId: String
@@ -37,6 +38,7 @@ struct AppleUser: Codable {
 
 struct NewLogin: View {
     @Environment(\.colorScheme) var colorScheme
+    @AppStorage("login") var login = false
     //@AppStorage("loginUpdate") var loggedInUpdate = false
     @Binding var loggedIn: Bool
     
@@ -92,6 +94,7 @@ struct NewLogin: View {
         }
     }
     
+    
     /** Function that handles this: Once user clicks on button, sign in will request name and email of the user for sign in. Will configure to get back properties in function. **/
     func configure(_ request: ASAuthorizationAppleIDRequest) {
         request.requestedScopes = [.fullName, .email]
@@ -99,12 +102,15 @@ struct NewLogin: View {
     
     /** Deals with result of sign in. Result<ASAuthorization> = Successful Sign In, Vice - Versa. The print statements will help to determine what's working in the handle function. **/
     func handle(_ authResult: Result<ASAuthorization, Error>) {
+        
+        let userID = UserDefaults.standard.object(forKey: "userID") as? String
+        
         switch authResult {
         case .success(let auth):
             //loggedInUpdate = true
             loggedIn = true
-            //print(auth)
-            switch auth.credential {
+            print(auth)
+            /*switch auth.credential {
             /** Will collect the user's credentials that we're interested in as per the AppleUser function above. JSON will parse that data to store **/
             case let appleIdCredentials as ASAuthorizationAppleIDCredential:
                 if let appleUser = AppleUser(credentials: appleIdCredentials),
@@ -125,10 +131,46 @@ struct NewLogin: View {
                 
             default:
                 print(auth.credential)
+            }*/
+            switch auth.credential {
+            case let appleIDCredentials as ASAuthorizationAppleIDCredential:
+                let userID = appleIDCredentials.user
+                if let firstName = appleIDCredentials.fullName?.givenName,
+                   let lastName = appleIDCredentials.fullName?.familyName,
+                   let email = appleIDCredentials.email {
+                    let record = CKRecord(recordType: "UserData", recordID: CKRecord.ID(recordName: userID))
+                    record["email"] = email
+                    record["firstName"] = firstName
+                    record["lastName"] = lastName
+                    UserDefaults.standard.set(email, forKey: "email")
+                    UserDefaults.standard.set(firstName, forKey: "firstName")
+                    UserDefaults.standard.set(lastName, forKey: "lastName")
+                    let publicDatabase = CKContainer.default().publicCloudDatabase
+                    publicDatabase.save(record) {(_, _) in
+                        UserDefaults.standard.set(record.recordID.recordName, forKey: "userID")
+                    }
+                    self.login = true
+                } else {
+                    let publicDatabase = CKContainer.default().publicCloudDatabase
+                    publicDatabase.fetch(withRecordID: CKRecord.ID(recordName: userID)) { (record, error) in
+                        if let fetchedInfo = record {
+                            let email = fetchedInfo["email"] as? String
+                            let firstName = fetchedInfo["firstName"] as? String
+                            let lastName = fetchedInfo["lastName"] as? String
+                            UserDefaults.standard.set(userID, forKey: "userID")
+                            UserDefaults.standard.set(email, forKey: "email")
+                            UserDefaults.standard.set(firstName, forKey: "firstName")
+                            UserDefaults.standard.set(lastName, forKey: "lastName")
+                            self.login = true
+                        }
+                    }
+                }
+            default:
+                break
             }
             
         case .failure(let error):
-            print(error)
+            print("failure", error)
         }
     }
 
@@ -143,4 +185,9 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
-*/
+ */
+
+
+
+
+
